@@ -1,0 +1,410 @@
+/* Estilos específicos para páginas de módulos */
+
+/* Module hero section */
+.module-hero {
+    background: linear-gradient(135deg, #4ade80 0%, #0891b2 100%);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.module-header-info h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.module-subtitle {
+    font-size: 1.125rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.module-progress {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.module-progress span:first-child {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.module-progress .progress-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.module-progress .progress-fill {
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Lessons section */
+.lessons-section {
+    padding: 2rem 0;
+}
+
+.lessons-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Lesson cards */
+.lesson-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.lesson-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.lesson-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-info p {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-duration {
+    color: #0891b2;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Lesson content */
+.lesson-content {
+    padding: 2rem;
+    display: none;
+}
+
+.lesson-card.active .lesson-content {
+    display: block;
+}
+
+.lesson-card.active .lesson-header {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+}
+
+.lesson-card.active .lesson-number {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+}
+
+/* Video section */
+.video-section {
+    margin-bottom: 2rem;
+}
+
+.video-section h4 {
+    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-card {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #0891b2;
+    margin-bottom: 1rem;
+}
+
+.video-card h5 {
+    color: #1e293b;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.video-card p {
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.video-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.video-link:hover {
+    background: linear-gradient(135deg, #0e7490 0%, #155e75 100%);
+    transform: translateY(-1px);
+}
+
+/* Activities section */
+.activities-section {
+    margin-bottom: 2rem;
+}
+
+.activities-section h4 {
+    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.activity-checklist {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.activity-item:hover {
+    background: #f1f5f9;
+}
+
+.activity-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #0891b2;
+}
+
+.activity-item span {
+    color: #475569;
+    font-size: 0.875rem;
+}
+
+/* Resources section */
+.resources-section {
+    margin-bottom: 2rem;
+}
+
+.resources-section h4 {
+    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resources-list {
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.resources-list li a {
+    display: block;
+    color: #0891b2;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background: #f0f9ff;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.resources-list li a:hover {
+    background: #e0f2fe;
+    color: #0e7490;
+}
+
+/* Complete lesson button */
+.complete-lesson-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.complete-lesson-btn:hover {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    transform: translateY(-1px);
+}
+
+.complete-lesson-btn:disabled {
+    background: #e2e8f0;
+    color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Module completion */
+.module-completion {
+    padding: 2rem 0;
+}
+
+.completion-card {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    padding: 3rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid #4ade80;
+}
+
+.completion-card h3 {
+    color: #1e293b;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.completion-card p {
+    color: #475569;
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+}
+
+.completion-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.evaluation-btn {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.evaluation-btn:hover {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    transform: translateY(-1px);
+}
+
+.continue-btn {
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.continue-btn:hover {
+    background: linear-gradient(135deg, #0e7490 0%, #155e75 100%);
+    transform: translateY(-1px);
+}
+
+/* Notes section */
+.notes-section {
+    margin-bottom: 2rem;
+}
+
+.notes-section h4 {
+    color: #1e293b;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.notes-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.875rem;
+    resize: vertical;
+}
+
+.notes-textarea:focus {
+    outline: none;
+    border-color: #0891b2;
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
+}
+
+/* Responsive design for modules */
+@media (max-width: 768px) {
+    .module-header-info h1 {
+        font-size: 2rem;
+    }
+    
+    .lesson-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .completion-actions {
+        flex-direction: column;
+    }
+    
+    .evaluation-btn,
+    .continue-btn {
+        width: 100%;
+    }
+}
+
